@@ -17,14 +17,21 @@ public class WrapperTest01 {
         // WRAPPERS
         Byte byteW= 1;
         Short shortW= 1;
-        Integer intW= 1;
+        Integer intW= 1; // AUTOBOXING
         Long longW= 1L;
         Float floatW= 10F;
         Double doubleW= 10D;
         Character charW = 'w';
         Boolean booleanW= false;
 
+        int i = intW.intValue(); // UNBOXING
+        Integer intW2 = Integer.parseInt("1"); // UNBOXING
+        Boolean  booleanW2 =  Boolean.parseBoolean("False");
+        System.out.println(booleanW2);
 
+        System.out.println(Character.isDigit('a'));
+        System.out.println(Character.isDigit('1'));
+        System.out.println(Character.isDigit('!'));
 
     }
 }
