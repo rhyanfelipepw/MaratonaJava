@@ -12,7 +12,7 @@ public class SimpleDateFormatTest01 {
         try {
             System.out.println(sdf.parse("Amsterdam 01  de Abril de 2023"));
         } catch (ParseException e) {
-
+            e.printStackTrace();
         }
     }
 }
